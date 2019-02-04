@@ -21,7 +21,9 @@ class HomeController extends AbstractController
      */
     public function index(Request $request, MessageBusInterface $bus)
     {
-        /*$message = $request->get('message', 'Hello la famille');
+
+
+        $message = $request->get('message', 'Hello la famille');
 
         $bus->dispatch(new SendNotification($message));*/
 
