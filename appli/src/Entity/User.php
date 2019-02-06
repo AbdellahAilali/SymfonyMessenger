@@ -26,6 +26,16 @@ class User
      */
     private $email;
 
+    /**
+     * @param string $username
+     * @param string $email
+     */
+    public function __construct(string $username, string $email)
+    {
+        $this->username = $username;
+        $this->email = $email;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
