@@ -21,7 +21,6 @@ class MailSendEvent extends Event
      */
     protected $userCreated;
 
-
     public function __construct(User $userCreated)
     {
         $this->userCreated = $userCreated;
@@ -32,5 +31,4 @@ class MailSendEvent extends Event
     {
         return $this->userCreated;
     }
-
 }

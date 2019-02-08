@@ -40,18 +40,18 @@ class SendController extends AbstractController
     {
         echo 'ControllerEntry /';
 
-        $user = new User("Mugiwarano", "01/01/1993");
+        $user = new User();
         $event = new MailSendEvent($user);
+
+        $this->dispatcher->addListener('command.send', function () {
+
+            echo "Callable";
+        });
 
         $this->dispatcher->dispatch(MailSendEvent::NAME, $event);
 
+
         echo ' ControllerExit';
-
-        /*$user = new User();
-
-        $event = new MailSendEvent($user);
-
-        $this->dispatcher->dispatch(MailSendEvent::NAME, $event);*/
 
         return $this->render('home/index.html.twig', []);
 
