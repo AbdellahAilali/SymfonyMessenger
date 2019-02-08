@@ -30,3 +30,8 @@ services:
     App\MessageHandler\:
         resource: '../src/MessageHandler'
         tags: ['messenger.message_handler']
+
+    Event.Mail.Listener:
+        class: App\EventListener\SendMailListener
+        tags:
+            - { name: 'kernel.event_listener', event: mail.send, method: sendMailAction}
