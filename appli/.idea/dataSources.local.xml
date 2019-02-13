@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="blog@172.17.0.2" uuid="2a956f31-779c-441f-b945-7a9942422672">
+    <data-source name="blog@172.17.0.2" uuid="fbc73082-55bd-49b4-b191-a9ac8a8b2d3f">
       <database-info product="MySQL" version="5.7.25" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.13 (Revision: 66459e9d39c8fd09767992bc592acd2053279be6)" dbms="MYSQL" exact-version="5.7.25" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
