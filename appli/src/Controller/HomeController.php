@@ -78,7 +78,7 @@ class HomeController extends AbstractController
     }*/
 
     /**
-     * @Route("/", name="home")
+     * @Route("/home", name="home")
      * @param $id
      * @return JsonResponse
      */

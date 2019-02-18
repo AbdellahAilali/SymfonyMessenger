@@ -19,7 +19,6 @@ class Personnage
     const PERSONNAGE_TUE = 'Vous etes dead Mec';
     const PERSONNAGE_FRAPPE = 'vous allez recevoir 5 de dégats';
 
-
     public function __construct(array $donnees)
     {
       $this->hydrater($donnees);
