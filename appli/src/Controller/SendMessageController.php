@@ -15,6 +15,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SendMessageController extends AbstractController
 {
+
+
     /**
      * @Route("/send", name="send_message")
      * @param Request $request
@@ -23,13 +25,12 @@ class SendMessageController extends AbstractController
      */
     public function sendAction(Request $request, MessageBusInterface $bus)
     {
-        $envelope = $bus->dispatch(new SendMessage('myMessage'));
+        $envelope = $bus->dispatch(new SendMessage('myMessage que je souhaite dispatcher avec symfony Messenger'));
 
         //$handledStamp = $envelope->last(HandledStamp::class);
 
         //$dataEnvelope = $handledStamp->getResult();
 
-        //return new JsonResponse([$dataEnvelope]);
         return $this->render('home/index.html.twig',[]);
     }
 }
